@@ -1,0 +1,22 @@
+{application, job_processing_challenge, [
+    {description, "An OTP application"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {mod, {job_processing_challenge_app, []}},
+    {applications, [
+        kernel,
+        stdlib,
+        cowboy,
+        ranch,
+        jsx
+    ]},
+    {env, []},
+    {modules, [
+        job_processing_challenge_app,
+        job_processing_challenge_sup,
+        job_http_handler,
+        job_sorter
+    ]},
+    {licenses, ["Apache-2.0"]},
+    {links, []}
+ ]}.
